@@ -1,0 +1,75 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
+.stepperWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 24px;
+}
+
+.stepperContent {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step span:first-child {
+  margin-bottom: 4px;
+}
+
+.buttonGroup {
+  background-color: white;
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 16px;
+
+  @media (max-width: 900px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nextButton {
+  @include buttonContained;
+}
+
+.backButton {
+  @include buttonOutline;
+}
+
+.stepperWrapper :global(.mantine-Stepper-separator) {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+.stepperWrapper
+  :global(
+    .mantine-Stepper-step[data-completed="true"] + .mantine-Stepper-separator
+  ) {
+  background-color: #f66135 !important;
+}
+
+.heading {
+  @include heading;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.subheading {
+  @include subHeading;
+  margin: 0;
+  font-size: 16px;
+}
+
+.trackButton {
+  @include buttonContained;
+  width: 225px;
+  margin-top: 24px;
+}

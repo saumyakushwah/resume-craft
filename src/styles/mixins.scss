@@ -1,0 +1,82 @@
+@mixin heading() {
+  font-size: $heading-size;
+  line-height: $heading-lineHeight;
+  color: $color-charcoal;
+  font-weight: $fontWeight3;
+}
+
+@mixin headingSpan {
+  font-size: 14px;
+  font-weight: $fontWeight0;
+  color: $color-mist;
+}
+
+@mixin italicHeading {
+  font-size: $heading-size;
+  color: $color-flare;
+  font-style: italic;
+  line-height: $heading-lineHeight-xs;
+}
+
+@mixin subHeading {
+  font-size: $heading-size-xs;
+  font-weight: $fontWeight1;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@mixin button {
+  width: 171px;
+  height: 48px;
+  border-radius: 4px;
+  font-weight: $fontWeight1;
+  margin-top: $padding-md;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@mixin buttonOutline {
+  @include button;
+  background: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+
+@mixin buttonContained {
+  @include button;
+  background: $color-flare;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-flare;
+  }
+}
+
+@mixin input {
+  background-color: #f9f9f9;
+  color: $color-flare !important;
+  padding: 9px 14px;
+  width: 419px;
+  border-radius: 4px;
+  border: 1px solid transparent !important;
+  outline: none !important;
+
+  &:focus {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+@mixin inputLabel {
+  font-size: 12px;
+  font-weight: $fontWeight1;
+  color: #5C5C5C;
+  margin-bottom: 4px;
+}
+
+@mixin inputError {
+  font-size: 12px;
+  color: $color-error;
+}

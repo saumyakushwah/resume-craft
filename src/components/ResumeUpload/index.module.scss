@@ -1,0 +1,110 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
+.heading {
+  @include heading;
+}
+
+.description {
+  @include subHeading;
+  margin-top: $padding-md;
+}
+
+.note {
+  @include headingSpan;
+}
+
+.uploadBox {
+  background: #ffffff;
+  border: 2.35597px dashed #cbd0dc;
+  border-radius: 15.3138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: $padding-sm;
+  height: 252px;
+}
+
+.uploadBox h2 {
+  @include heading;
+  margin-bottom: $padding-xs;
+}
+
+.uploadButton {
+  @include buttonOutline;
+}
+
+.uploadFileBoxContainer {
+  margin-top: $padding-sm;
+  background-color: $color-seashell;
+  border-radius: 16.2px;
+  width: 532px;
+  height: 125px;
+  padding: 21px 21px 25px;
+
+  @media (max-width: 900px) {
+    width: auto;
+  }
+}
+
+.uploadedFileBoxSubContainer {
+  display: flex;
+  align-items: center;
+}
+
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 3.8px 21px 3.8px;
+  width: 100%;
+}
+
+.fileName {
+  @include subHeading;
+}
+
+.fileSize {
+  @include headingSpan;
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+
+  .dot {
+    margin-left: 5px;
+  }
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: $color-mist;
+  border-radius: 50%;
+}
+
+.loaderIcon {
+  animation: spin 1s linear infinite;
+  margin: 0 6px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkIcon {
+  margin: 0 6px;
+}
+
+.crossIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.progressBar {
+  width: 100%;
+  margin-top: 12px;
+}

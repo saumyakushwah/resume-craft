@@ -1,0 +1,26 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
+.heading {
+  @include heading;
+}
+
+.inputLabel {
+  @include inputLabel;
+}
+
+.inputField {
+  @include input;
+
+  @media (max-width: 900px) {
+    width: auto;
+  }
+}
+
+.errorBorder {
+  border: 1px solid $color-error !important;
+}
+
+.errorText {
+  @include inputError;
+}

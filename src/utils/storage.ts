@@ -1,0 +1,1 @@
+export const storagePrefix = 'resume_craft_';
