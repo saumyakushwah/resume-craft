@@ -1,6 +1,10 @@
+# ResumeCraft
+
+**ResumeCraft** is a step-based platform designed to help users easily create and manage their professional profiles. It guides users through a series of steps to input essential details such as personal information, skills, education, a professional summary, and resume uploads. This structured approach allows users to provide all the necessary details for job applications in an intuitive way. 
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -18,23 +22,56 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ResumeCraft offers a smooth and intuitive resume-building experience with the following features:
 
-## Learn More
+- 📄 **Resume Upload**
+  - Upload your resume via file browser or drag-and-drop interface
+  - Real-time upload loader with linear progress bar and file size display
+  - Option to remove uploaded resume file
 
-To learn more about Next.js, take a look at the following resources:
+- 🧾 **Basic Information Form**
+  - Input form with proper field validations
+  - Country dropdown with pre-populated options
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- 💡 **Skills Section**
+  - Dynamically add multiple skills
+  - Drag and reorder skills using drag-and-drop
+  - Skill field validations and easy removal
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🎓 **Education Section**
+  - Add multiple education entries dynamically
+  - Drag and reorder education entries
+  - Valid year format checks and entry removal
 
-## Deploy on Vercel
+- 🧩 **Summary Page**
+  - View all entered details in the order submitted
+  - Edit any section before final submission
+  - Download resume file as a PDF
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🪜 **Custom Stepper Navigation**
+  - Step-based form navigation with a custom-designed stepper
+  - **Validation on “Next” click**: Prevents proceeding to the next step until the current step’s fields are valid
+  - **Validation on step click (direct navigation)**: Prevents skipping ahead unless all previous steps are valid
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- ✅ **Robust Form Handling**
+  - Complete form and state validations
+  - Dynamic fields with responsive drag-and-drop support
+
+- 📱 **UI & UX**
+  - Fully responsive design
+  - UI adheres closely to the Figma design for visual consistency
+
+- 💾 **Bonus Feature: Local Storage**
+  - Form progress is automatically saved to local storage
+  - Data is preserved even on page refresh or accidental tab close
+
+---
+
+## Live Demo
+
+You can try out ResumeCraft live here:  
+🔗 [https://resume-craft-beige.vercel.app/](https://resume-craft-beige.vercel.app/)
