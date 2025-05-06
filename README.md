@@ -1,10 +1,44 @@
 # ResumeCraft
 
-**ResumeCraft** is a step-based platform designed to help users easily create and manage their professional profiles. It guides users through a series of steps to input essential details such as personal information, skills, education, a professional summary, and resume uploads. This structured approach allows users to provide all the necessary details for job applications in an intuitive way. 
+**ResumeCraft** is a step-based platform designed to help users easily create and manage their professional profiles. It guides users through a series of steps to input essential details such as personal information, skills, education, a professional summary, and resume uploads. This structured approach allows users to provide all the necessary details for job applications in an intuitive way.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## 🚀 Getting Started
+
+### Project Dependencies
+
+This project uses [pnpm](https://pnpm.js.org/) as its package manager.
+
+### Installation
+
+To install `pnpm` globally, run the following command:
+
+```bash
+npm install -g pnpm
+```
+
+### Usage
+
+After installing pnpm, you can install project dependencies using:
+
+```bash
+pnpm install
+```
+
+### Alternative Package Managers
+
+If you prefer to use `npm` or `yarn` instead of `pnpm`, you can delete the node_modules folder and the package-lock.json file (if it exists), and then run the following command to install the dependencies using your preferred package manager:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Using pnpm is recommended for its fast and disk space-efficient installation of packages.
+
+### Running dev server
 
 First, run the development server:
 
@@ -29,39 +63,47 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 ResumeCraft offers a smooth and intuitive resume-building experience with the following features:
 
 - 📄 **Resume Upload**
+
   - Upload your resume via file browser or drag-and-drop interface
   - Real-time upload loader with linear progress bar and file size display
   - Option to remove uploaded resume file
 
 - 🧾 **Basic Information Form**
+
   - Input form with proper field validations
   - Country dropdown with pre-populated options
 
 - 💡 **Skills Section**
+
   - Dynamically add multiple skills
   - Drag and reorder skills using drag-and-drop
   - Skill field validations and easy removal
 
 - 🎓 **Education Section**
+
   - Add multiple education entries dynamically
   - Drag and reorder education entries
   - Valid year format checks and entry removal
 
 - 🧩 **Summary Page**
+
   - View all entered details in the order submitted
   - Edit any section before final submission
   - Download resume file as a PDF
 
 - 🪜 **Custom Stepper Navigation**
+
   - Step-based form navigation with a custom-designed stepper
   - **Validation on “Next” click**: Prevents proceeding to the next step until the current step’s fields are valid
   - **Validation on step click (direct navigation)**: Prevents skipping ahead unless all previous steps are valid
 
 - ✅ **Robust Form Handling**
+
   - Complete form and state validations
   - Dynamic fields with responsive drag-and-drop support
 
 - 📱 **UI & UX**
+
   - Fully responsive design
   - UI adheres closely to the Figma design for visual consistency
 
